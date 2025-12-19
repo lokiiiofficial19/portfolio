@@ -1,5 +1,6 @@
 import React from "react";
 import Projects from "./Projects";
+import profileImg from "../assets/IMG_20251129_121652.jpg";
 
 import "./Hero.css";
 
@@ -19,7 +20,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="hero-image">
-        <img src="src/assets/IMG_20251129_121652.jpg" alt="Profile" />
+            <img src={profileImg} alt="My photo" />
       </div>
     </section>
   );
