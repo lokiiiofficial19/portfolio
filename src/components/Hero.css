@@ -1,128 +1,137 @@
-/* ===========================
-   HERO SECTION STYLING
-   Professional Portfolio Look
-=========================== */
-
 .hero {
-  height: 100vh;
-  padding: 0 5%;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #111827;  /* dark modern background */
-  color: #ffffff;
-  gap: 2rem;
- 
+  padding: 0 10%;
+  gap: 40px;
 }
 
 .hero-text {
-  flex: 1;
-  max-width: 600px;
+  max-width: 550px;
+  animation: fadeUp 1.2s ease forwards;
 }
 
-.hero-text h4 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-  letter-spacing: 1px;
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 span {
+  color: #2563eb;
+}
+
+.hero-text h2 {
+  font-size: 1.5rem;
+  color: #6b7280;
+  margin-bottom: 20px;
 }
 
 .hero-text p {
-  font-size: 1rem;
-  line-height: 1.7;
-  margin-bottom: 1rem;
-  opacity: 0.85;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #374151;
 }
 
-/* Buttons */
 .hero-buttons {
-  margin-top: 1.5rem;
   display: flex;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .btn {
-  padding: 0.8rem 1.6rem;
-  background-color: #2563eb;   /* blue CTA button */
-  color: white;
-  border: none;
+  padding: 12px 26px;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.btn:hover {
-  background-color: #1d4ed8;
-  transform: translateY(-3px);
-}
-
-/* Outline button */
-.btn-outline {
-  background: transparent;
-  border: 2px solid #2563eb;
-}
-
-.btn-outline:hover {
+.btn.primary {
   background: #2563eb;
-  transform: translateY(-3px);
+  color: #fff;
 }
 
-/* Image styling */
-.hero-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+.btn.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(37, 99, 235, 0.4);
+}
+
+.btn.secondary {
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
+
+.btn.secondary:hover {
+  background: #2563eb;
+  color: #fff;
 }
 
 .hero-image img {
-  width: 320px;
-  height: 320px;
-  object-fit: cover;
-  border-radius: 50%;       /* circle photo */
-  border: 4px solid #2563eb;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  animation: float 4s ease-in-out infinite;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* ===========================
-   RESPONSIVE DESIGN
-=========================== */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-@media (max-width: 900px) {
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
   .hero {
     flex-direction: column-reverse;
     text-align: center;
-    padding-top: 13rem;     /* space for navbar */
+    padding: 40px 6%;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
   }
 
   .hero-image img {
-    width: 260px;
-    height: 260px;
-  }
-
-  .hero-text h1 {
-    font-size: 2.4rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-
-  .hero-text p {
-    font-size: 0.9rem;
+    width: 220px;
   }
 
   .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn,
-  .btn-outline {
-    width: 100%;
-    text-align: center;
+    justify-content: center;
   }
 }
