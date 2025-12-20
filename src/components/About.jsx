@@ -1,5 +1,6 @@
 import React from "react";
 import "./about.css";
+import profileImg from "../assets/IMG_20251129_121652.jpg";
 
 export default function About() {
   return (
@@ -26,7 +27,7 @@ export default function About() {
         </div>
 
         <div className="about-image">
-          <img src="src/assets/IMG_20251129_121652.jpg" alt="About" />
+            <img src={profileImg} alt="My photo" />
         </div>
       </div>
     </section>
