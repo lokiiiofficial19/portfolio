@@ -8,7 +8,7 @@ export default function Skills() {
     { name: "JavaScript", icon: "⚡" },
     { name: "React", icon: "⚛️" },
     { name: "Git / GitHub", icon: "📁" },
-    { name: "Bootstrap", icon: "🅱️" },
+    { name: "Java(OOPS)", icon: "🅱️" },
     { name: "MS Excel", icon: "📊" },
     { name: "Responsive Design", icon: "📱" }
   ];
