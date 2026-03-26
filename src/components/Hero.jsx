@@ -7,14 +7,13 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-text">
         <h1>
-          Hi, I’m <span>Lokesh Kumar</span> 👋
+          Hi, I’m <span>Hi, I'm Lokesh 👋 </span> 👋
         </h1>
 
-        <h2>Frontend Developer</h2>
+        <h2>Aspiring Software Developer | Java Enthusiast</h2>
 
         <p>
-          I build modern, responsive, and user-friendly web applications using
-          HTML, CSS, JavaScript, and React.
+          I build efficient and scalable applications using Java and problem-solving skills.
         </p>
 
         <div className="hero-buttons">
