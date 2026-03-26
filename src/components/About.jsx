@@ -11,16 +11,18 @@ export default function About() {
         <div className="about-text">
           <h3>Hello, I'm Lokesh Kumar 👋</h3>
           <p>
-            I am a Front-End Developer passionate about building clean, 
-            responsive, and user-friendly websites. I enjoy turning ideas 
-            into beautiful digital experiences using HTML, CSS, JavaScript, 
-            and React.
+            I am a passionate Software Developer currently learning Java and Data Structures.  
+I enjoy solving problems and building applications that improve real-world systems.
+
+Currently focusing on:
+- Java Programming
+- Data Structures & Algorithms
+- Problem Solving
           </p>
 
           <p>
             I love learning new technologies and improving my skills every day.
-            My goal is to become a professional front-end developer in the 
-            software industry.
+            My goal is to start my career as a Software Developer
           </p>
 
           <a href="#contact" className="about-btn">Contact Me</a>
